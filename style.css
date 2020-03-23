@@ -1,0 +1,78 @@
+/* * {
+    border: black;
+    border-radius: 1px;
+    border-style: solid;
+} */
+
+header{
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+}
+
+.navBar{
+    width: 30%;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
+
+.currentView, .forecastView {
+    width: 65%;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+
+.foreCastCard {    
+    display: inline-block;
+    margin: 5px 15px auto;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.btnCity {
+    display: block;
+    text-align: left;
+    padding-left: 5%;
+    width: 100%;
+}
+
+#currentPlaceNDate {
+    display: inline;
+}
+
+.greC{
+    background-color: green;
+}
+
+.yelC{
+    background-color: yellow;
+}
+
+.oraC{
+    background-color: orange;
+}
+
+.redC{
+    background-color: red;
+}
+
+.vioC{
+    background-color: violet;
+}
+
+.btnCity:hover{
+    background-color: darkturquoisee;
+}
+
+
