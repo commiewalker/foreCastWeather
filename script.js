@@ -143,11 +143,13 @@ $(document).ready(function () {
             arrayBtn = storedSearch;                      // update array
 
             $.each(arrayBtn, function (index, value) {
-                createBtn(value);
+                createBtn(value);                
             })
+            var lastSearch = arrayBtn[arrayBtn.length - 1]
+            urlWeather(lastSearch);
+            urlForecast(lastSearch);
         }
     }); // onLoad function
-
 
     $("#searchBtn").click(function (event) {
         event.preventDefault();
