@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function urlWeather(city) {
 
-        var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+        var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
         $.ajax({
             url: queryURL,
@@ -75,7 +75,7 @@ $(document).ready(function () {
                 var newDate = $("<h3>").text(noTimeNeeded(fiveDay[i].dt_txt));
                 newDiv.addClass("foreCastCard");
                 var newImg = $("<img>");
-                newImg.attr("src", "http://openweathermap.org/img/w/" + fiveDay[i].weather[0].icon + ".png");
+                newImg.attr("src", "https://openweathermap.org/img/w/" + fiveDay[i].weather[0].icon + ".png");
                 var fDegree = "Temp: " + convertDegree(fiveDay[i].main.temp) + " F";
                 var newTemp = $("<p>").text(fDegree);
                 var newHu = $("<p>").text("Humidity: " + fiveDay[i].main.humidity + " %");
