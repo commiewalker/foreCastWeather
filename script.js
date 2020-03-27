@@ -27,7 +27,7 @@ $(document).ready(function () {
         }).then(function (data) {
             // update all elements below
             $("#currentPlaceNDate").text(data.name);
-            $("#currentPic").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+            $("#currentPic").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
             $("#currentTemp").text(convertDegree(data.main.temp) + " F");
             $("#currentHu").text(data.main.humidity + " %");
             $("#currentWind").text(data.wind.speed + " MPH");
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     function urlUV(lon, lat) {
 
-        var queryUrl = `http://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`;
+        var queryUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`;
 
         $.ajax({
             url: queryUrl,
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }; // End of UV
 
     function urlForecast(city) {
-        var queryUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+        var queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
         $.ajax({
             url: queryUrl,
